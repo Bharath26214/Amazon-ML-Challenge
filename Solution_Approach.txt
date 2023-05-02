@@ -1,0 +1,26 @@
+===========================	CODE SLAYERS	===========================
+
+TITLE : PRODUCT_LENGTH Prediction
+
+OBJECTIVE : To preprocess textual data, engineer features, and develop a predictive model for PRODUCT_LENGTH.
+
+APPROACH :
+
+	* Examined dataset and identified missing values and anomalies
+	* Divided the data set into two parts and pre-processed it separately
+	* Applied log transformation on PRODUCT_LENGTH attribute to reduce skewness
+	* Filled null values with an empty string
+	* Removed punctuations, stopwords, html tags, and lemmatized text data
+	* Tried both bag_of_words and Tfidf methods for vectorizing text data
+	* Created a new attribute named data which consists all the text data
+	* Used XGBoost algorithm for modelling due to its ensembling learning method
+
+RESULTS :
+
+	* Normalizing the attribute scaled the values between 1 to 10
+	* Filling null values with an empty string was not ideal but worked
+	* XGBoost performed best among tree-based algorithms for predicting PRODUCT_LENGTH
+
+LIMITATIONS :
+
+	* Using an empty string to fill null values may have introduced noise in the data
